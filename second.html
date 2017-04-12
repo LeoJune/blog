@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <html>
-<title>博客首页</title>
+<head>
+  <meta charset="utf-8">
+  <title>我的博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+  body{
+    padding: 10px;
+  }
+  img{
+    border:none;
+    max-width:100%;
+  }
+  </style>
+  
+</head>
+<body>
+  <div id="content">
+   # 我的第二篇博客22222
+
+   **程卓**
+
+   __不要轻信网上的新闻，至少要有点根据  --某某__
+
+   markdown
 
 
-内容部分2222222
+  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491823260402&di=4115a4668f50e9ecc74a0a68356f1e06&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F11%2F09%2F40%2F84E58PICKFM.jpg" alt="联盟图片">
+  </div>
+  <script>
+    var content = document.getElementById('content');
+    var html = content.innerHTML;
+    
+    content.innerHTML = marked(html);
+    
+  </script>
+</body>
 </html>
