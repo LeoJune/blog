@@ -8,4 +8,4 @@ fs.readdir('./markdown',function(error,files){
 	var result = template.replace('%content%',markdown)
 	// console.log(markdown)
 	fs.writeFileSync(file[0]+'.html',result )
-})
+}) 
